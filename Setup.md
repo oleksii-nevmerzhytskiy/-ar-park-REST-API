@@ -8,6 +8,11 @@
 
 `git clone https://github.com/oleksii-nevmerzhytskiy/Car-park-REST-API.git`
 
+Перейдіть в папку проекту:
+
+`cd Car-park-REST-API`
+
+
 Створіть віртуальне середовище:
 
 Linux:
@@ -23,16 +28,13 @@ Windows
 `.\venv\Scripts\activate.bat`
 
 
-Перейдіть в папку проекту
-
-`cd Car-park-REST-API`
 
 Виконайте команду:
 
 `pip install -r requirements.txt `
 
 
-Створіть міграцію
+Створіть міграцію:
 
 `python manage.py makemigrations <ім'я міграції>`
 
@@ -40,7 +42,7 @@ Windows
 
 `python manage.py migrate`
 
-Створіть адміністратора
+Створіть адміністратора:
 
 `python manage.py createsuperuser`
 ### Запуск проекту
