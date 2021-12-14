@@ -1,12 +1,12 @@
 
 
-##Інсталяція
+## Інсталяція
 
 
 
 В порожній папці виконайте команду:
 
-`git clone https://github.com/artem-svistelnik/yalantis-python-school.git`
+`git clone https://github.com/oleksii-nevmerzhytskiy/-ar-park-REST-API.git`
 
 Створіть віртуальне середовище:
 
@@ -25,7 +25,7 @@ Windows
 
 Перейдіть в папку проекту
 
-`cd yalantis-python-school`
+`cd Car-park-REST-API`
 
 Виконайте команду:
 
@@ -43,7 +43,7 @@ Windows
 Створіть адміністратора
 
 `python manage.py createsuperuser`
-###Запуск проекту
+### Запуск проекту
 Для запуску треба виконати у директорії з проектом наступну команду:
 
 
@@ -51,7 +51,7 @@ Windows
 
 
 
-##Запити для перевірки:
+## Запити для перевірки:
 
 1. Вивід списку водіїв:
 
@@ -78,28 +78,28 @@ Windows
     http://localhost:8000/drivers/driver/
 
 
-Методом POST передати дані у форматі json:
+    Методом POST передати дані у форматі json:
 
-    {
-    "driver": 
         {
-            "first_name": "test name",
-            "last_name": "test last name"
+        "driver": 
+            {
+                "first_name": "test name",
+                "last_name": "test last name"
+            }
         }
-    }
 
 7. Редагування водія:
 
     http://localhost:8000/drivers/driver/1/
 
-Методом PUT передати дані у форматі json:
+    Методом PUT передати дані у форматі json:
 
-    {
-    "driver": 
         {
-            "first_name": "test name 1"
+        "driver": 
+            {
+                "first_name": "test name 1"
+            }
         }
-    }
 8. Видалення водія:
 
     Виконати метод DELETE
@@ -132,19 +132,17 @@ Windows
     http://localhost:8000/vehicles/vehicle/
 
     Методом POST передати дані у форматі json:
+    
 
-
-
-    {
-    "vehicle": 
         {
-            "driver_id": null,
-            "make": "test make",
-            "model": "test model",
-            "plate_number": "XX 1111 XX"
+        "vehicle": 
+            {
+                "driver_id": null,
+                "make": "test make",
+                "model": "test model",
+                "plate_number": "XX 1111 XX"
+            }
         }
-    }
-
 14. Редагування машини:
 
     http://localhost:8000/vehicles/vehicle/1/
@@ -152,12 +150,12 @@ Windows
     Методом PUT передати дані у форматі json:
 
 
-    {
-    "vehicle": 
         {
-            "plate_number": "XX 9999 XX"
+        "vehicle": 
+            {
+                "plate_number": "XX 9999 XX"
+            }
         }
-    }
 
 15. Садимо водія в машину / висаджуємо водія з машини
 
@@ -166,20 +164,20 @@ Windows
     Методом POST передати дані у форматі json:
 
 
-    {
-    "vehicle": 
         {
-            "driver_id": 1
+        "vehicle": 
+            {
+                "driver_id": 1
+            }
         }
-    }
-або
+    або
 
-    {
-    "vehicle": 
         {
-            "driver_id": null
+        "vehicle": 
+            {
+                "driver_id": null
+            }
         }
-    }
 16. Видалення машини:
 
     Виконати метод DELETE
