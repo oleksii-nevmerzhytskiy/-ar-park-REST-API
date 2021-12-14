@@ -6,7 +6,7 @@
 
 В порожній папці виконайте команду:
 
-`git clone https://github.com/oleksii-nevmerzhytskiy/-ar-park-REST-API.git`
+`git clone https://github.com/oleksii-nevmerzhytskiy/Car-park-REST-API.git`
 
 Створіть віртуальне середовище:
 
